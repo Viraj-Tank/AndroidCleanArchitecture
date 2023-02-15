@@ -14,7 +14,7 @@ object Dep {
     val junitTesting by lazy { "androidx.test.ext:junit:1.1.5" }
     val espresso by lazy { "androidx.test.espresso:espresso-core:3.5.1" }
     val hilt by lazy { "com.google.dagger:hilt-android:2.42" }
-    val hiltCompiler by lazy { "com.google.dagger:hilt-compiler:2.42" }
+    val hiltCompiler by lazy { "com.google.dagger:hilt-android-compiler:2.42" }
 //    val hiltCompiler by lazy { "androidx.hilt:hilt-compiler:1.0.0" }
     val retrofit by lazy{ "com.squareup.retrofit2:retrofit:2.9.0" }
     val retrofitGson by lazy{ "com.squareup.retrofit2:converter-gson:2.9.0" }

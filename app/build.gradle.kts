@@ -28,6 +28,10 @@ android {
             )
         }
     }
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -53,7 +57,7 @@ dependencies {
     implementation (Dep.material)
     implementation (Dep.constraint)
     implementation (Dep.hilt)
-    implementation (Dep.hiltCompiler)
+    kapt (Dep.hiltCompiler)
     implementation (Dep.retrofit)
     implementation (Dep.retrofitGson)
     implementation (Dep.gson)
@@ -61,6 +65,7 @@ dependencies {
     implementation (Dep.activity)
     implementation (Dep.fragment)
     implementation (Dep.glide)
+    implementation (Dep.paging)
 
     annotationProcessor (Dep.glideCompiler)
 
